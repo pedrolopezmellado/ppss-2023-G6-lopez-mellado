@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatriculaBO.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">matriculacion-bo</a> &gt; <a href="index.source.html" class="el_package">ppss.matriculacion.bo</a> &gt; <span class="el_source">MatriculaBO.java</span></div><h1>MatriculaBO.java</h1><pre class="source lang-java linenums">package ppss.matriculacion.bo;
+
+import java.util.List;
+
+import ppss.matriculacion.dao.FactoriaDAO;
+import ppss.matriculacion.proxy.ProxyDatosEconomicos;
+import ppss.matriculacion.to.AlumnoTO;
+import ppss.matriculacion.to.AsignaturaTO;
+import ppss.matriculacion.to.MatriculaTO;
+import ppss.matriculacion.to.ReciboMatriculaTO;
+
+<span class="nc" id="L12">public class MatriculaBO {</span>
+
+	protected FactoriaDAO getFactoriaDAO() {
+<span class="nc" id="L15">		return new FactoriaDAO();</span>
+	}
+
+	protected ProxyDatosEconomicos getProxyDatosEconomicos() {
+<span class="nc" id="L19">		return new ProxyDatosEconomicos();</span>
+	}
+
+	protected AlumnoBR getAlumnoBR() {
+<span class="nc" id="L23">		return new AlumnoBR();</span>
+	}
+
+	protected MatriculaBR getMatriculaBR() {
+<span class="nc" id="L27">		return new MatriculaBR();</span>
+	}
+
+	public MatriculaTO matriculaAlumno(AlumnoTO alumno,
+			List&lt;AsignaturaTO&gt; asignaturas) throws BOException {
+
+<span class="nc" id="L33">		return null;</span>
+	}
+
+	public ReciboMatriculaTO generaReciboMatricula(AlumnoTO alumno)
+			throws BOException {
+
+<span class="nc" id="L39">		return null;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

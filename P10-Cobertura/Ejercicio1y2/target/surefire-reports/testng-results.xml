@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-29T00:02:56 CEST" name="Command line suite" finished-at="2023-05-29T00:02:56 CEST" duration-ms="121">
+    <groups>
+    </groups>
+    <test started-at="2023-05-29T00:02:56 CEST" name="Command line test" finished-at="2023-05-29T00:02:56 CEST" duration-ms="121">
+      <class name="ppss.ejercicio1.MultipathExampleTest">
+        <test-method signature="testMultipath2Test1()[pri:0, instance:ppss.ejercicio1.MultipathExampleTest@5c10285a]" started-at="2023-05-29T00:02:56 CEST" name="testMultipath2Test1" finished-at="2023-05-29T00:02:56 CEST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipath2Test1 -->
+        <test-method signature="testMultipath2Test2()[pri:0, instance:ppss.ejercicio1.MultipathExampleTest@5c10285a]" started-at="2023-05-29T00:02:56 CEST" name="testMultipath2Test2" finished-at="2023-05-29T00:02:56 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipath2Test2 -->
+        <test-method signature="testMultipath2Test3()[pri:0, instance:ppss.ejercicio1.MultipathExampleTest@5c10285a]" started-at="2023-05-29T00:02:56 CEST" name="testMultipath2Test3" finished-at="2023-05-29T00:02:56 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipath2Test3 -->
+        <test-method signature="testMultipath3Test1()[pri:0, instance:ppss.ejercicio1.MultipathExampleTest@5c10285a]" started-at="2023-05-29T00:02:56 CEST" name="testMultipath3Test1" finished-at="2023-05-29T00:02:56 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipath3Test1 -->
+        <test-method signature="testMultipath3Test2()[pri:0, instance:ppss.ejercicio1.MultipathExampleTest@5c10285a]" started-at="2023-05-29T00:02:56 CEST" name="testMultipath3Test2" finished-at="2023-05-29T00:02:56 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipath3Test2 -->
+        <test-method signature="testMultipathTest1()[pri:0, instance:ppss.ejercicio1.MultipathExampleTest@5c10285a]" started-at="2023-05-29T00:02:56 CEST" name="testMultipathTest1" finished-at="2023-05-29T00:02:56 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipathTest1 -->
+        <test-method signature="testMultipathTest2()[pri:0, instance:ppss.ejercicio1.MultipathExampleTest@5c10285a]" started-at="2023-05-29T00:02:56 CEST" name="testMultipathTest2" finished-at="2023-05-29T00:02:56 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipathTest2 -->
+        <test-method signature="testMultipathTest3()[pri:0, instance:ppss.ejercicio1.MultipathExampleTest@5c10285a]" started-at="2023-05-29T00:02:56 CEST" name="testMultipathTest3" finished-at="2023-05-29T00:02:56 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipathTest3 -->
+      </class> <!-- ppss.ejercicio1.MultipathExampleTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

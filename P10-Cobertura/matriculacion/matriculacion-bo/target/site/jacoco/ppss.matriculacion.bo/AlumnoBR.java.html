@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AlumnoBR.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">matriculacion-bo</a> &gt; <a href="index.source.html" class="el_package">ppss.matriculacion.bo</a> &gt; <span class="el_source">AlumnoBR.java</span></div><h1>AlumnoBR.java</h1><pre class="source lang-java linenums">package ppss.matriculacion.bo;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+<span class="nc" id="L6">public class AlumnoBR {</span>
+
+	public boolean validaNif(String nif) {
+<span class="nc bnc" id="L9" title="All 4 branches missed.">		if(nif.length()!=9 || nif==null) {</span>
+<span class="nc" id="L10">		    return false;</span>
+		}
+		
+<span class="nc" id="L13">		String dni = nif.substring(0, 8);</span>
+<span class="nc" id="L14">		char letra = nif.charAt(8); </span>
+		
+<span class="nc" id="L16">		Pattern pattern = Pattern.compile(&quot;[0-9]{8,8}&quot;);</span>
+<span class="nc" id="L17">		Matcher matcher = pattern.matcher(dni); </span>
+<span class="nc" id="L18">		String letras = &quot;TRWAGMYFPDXBNJZSQVHLCKE&quot;;</span>
+
+<span class="nc" id="L20">		long ldni = 0;</span>
+		try {
+<span class="nc" id="L22">			ldni = Long.parseLong(dni);</span>
+<span class="nc" id="L23">		} catch(NumberFormatException e) {</span>
+<span class="nc" id="L24">			return false;</span>
+<span class="nc" id="L25">		}</span>
+
+<span class="nc" id="L27">		int indice = (int)(ldni % 23);</span>
+<span class="nc" id="L28">		char letraEsperada = letras.charAt(indice);</span>
+		
+<span class="nc bnc" id="L30" title="All 4 branches missed.">		return matcher.matches() &amp;&amp; letra==letraEsperada;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
